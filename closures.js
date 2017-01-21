@@ -73,6 +73,8 @@ makeCall()
 /* Write a function called makeCounter that makes the following code work
 properly. */
 
+
+
 //Code Here
 
 //Uncomment this once you make your function
@@ -135,11 +137,13 @@ function motivation(firstname, lastname){
 
   var welcomeText = 'You\'re doing awesome, keep it up ';
 
-  // code message function here.
+  function message() {
+    return welcomeText + firstname + ' ' + lastname + '.'
+  }// code message function here.
 
 
   //Uncommment this to return the value of your invoked message function
-  //return message();
+  return message();
 
 }
 
