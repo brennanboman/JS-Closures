@@ -49,9 +49,13 @@ Create a makeCall function that when invoked logs 'Calling Jake at 435-215-9248'
 in your console. */
 
 
-  var makeCall = callFriend();//Code Here
 
-  console.log(makeCall())
+var friendCaller = callFriend()(435-215-9248) //Code Here
+
+function makeCall() {
+  return friendCaller
+}
+makeCall()
 
 
 
